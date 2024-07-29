@@ -80,6 +80,21 @@ body {
   display: none;
 }
 
+h1 {
+  color: #fff;
+}
+
+p {
+  color: #fff;
+}
+
+/* hero section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+}
 /* media queris */
 
 /* laptop */
@@ -106,6 +121,27 @@ body {
     background-color: #fff;
     width: 30rem;
     height: 100vh;
+    transition: 0.3s;
+  }
+
+  .navbar .navbar-nav.active {
+    right: 0;
+  }
+
+  .navbar .navbar-nav a {
+    color: var(--primary);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
+
+  .navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.2);
   }
 }
 
